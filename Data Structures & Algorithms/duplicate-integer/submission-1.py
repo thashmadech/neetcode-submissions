@@ -1,0 +1,16 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        # brute force
+        # for i in range(len(nums)):
+        #     for j in range(i+1, len(nums)):
+        #         if nums[i] == nums[j]:
+        #             return True
+        # return False
+
+
+        # Time complexity O(n) 
+        my_set = set(nums) 
+        if(len(my_set)) < len(nums):
+            return True
+        return False
+        
